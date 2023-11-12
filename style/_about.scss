@@ -1,0 +1,55 @@
+.about{
+    width: 79%;
+    max-width: 972px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 153px;
+    margin-bottom: 168px;
+
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+
+        h2{
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 59px;
+            margin-bottom: 13px;
+        }
+
+        p{
+            color: #DAD8D7;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        button{
+                padding: 16px 28px;
+                @include border-radius(8px);
+                border: 1px solid $button-color;
+                background-color: $button-color;
+                width: fit-content;
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                transition: all 0.1s ease-in;
+
+                &:hover{
+                    background-color: transparent;
+                    border: 1px solid $main-text-color;
+                }
+        }
+    }
+}

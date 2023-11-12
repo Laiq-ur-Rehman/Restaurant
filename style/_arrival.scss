@@ -1,0 +1,127 @@
+.new-arrival{
+    width: 79%;
+    max-width: 972px;
+    margin-inline: auto;
+    margin-top: 220px;
+    margin-bottom: 116px;
+
+    h2{
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .arrive{
+        display: flex;
+        justify-content: center;
+        margin-top: 94px;
+        color: white;
+
+        .arrival{
+            display: flex;
+            gap: 35px;
+
+            .arrive-menu{
+                display: flex;
+                justify-content: center;
+
+                .new{
+                    p{
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        padding: 4px 8px;
+                        @include border-radius(4px);
+                        background-color: $button-color;
+                    }
+                }
+
+                .arrival-menu{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 47px;
+                    align-items: center;
+
+                    .arrive-menu-prc{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 18px;
+                        align-items: center;
+
+                        .arrival-menu-dec{
+                            text-align: center;
+                            width: fit-content;
+
+                            p{
+                                color: #FFF;
+                                text-align: center;
+                                font-family: Poppins;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                            p3{
+                                color: #DAD8D7;
+                                text-align: center;
+                                font-family: Poppins;
+                                font-size: 13px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+
+                        .arrival-menu-price{
+                            display: flex;
+                            gap: 8px;
+                            align-items: center;
+
+                            p{
+                                color: #FFF;
+                                text-align: center;
+                                font-family: Poppins;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                            p5{
+                                color: #F4511F;
+                                text-align: center;
+                                font-family: Poppins;
+                                font-size: 13px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cart-button{
+                align-self: flex-end;
+
+                img{
+                    background-color: $button-color;
+                    border-radius: 4px 4px 12px 4px;
+                    padding: 4px 6px;
+                }
+            }
+        }
+    }
+
+
+
+}

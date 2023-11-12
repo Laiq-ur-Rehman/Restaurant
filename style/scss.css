@@ -1,0 +1,416 @@
+* {
+  background-color: #000000;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif; }
+
+.hero-section {
+  width: 79%;
+  max-width: 972px;
+  margin-inline: auto; }
+
+header {
+  padding-top: 29px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 61px; }
+
+.logo {
+  display: flex;
+  gap: 9px;
+  align-items: center; }
+  .logo p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; }
+
+.menu nav ul {
+  list-style-type: none;
+  display: flex; }
+.menu nav a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 24px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  transition: all 0.1s ease-in; }
+  .menu nav a:hover {
+    background-color: #F4511F; }
+
+.wrapper {
+  display: flex;
+  gap: 78px;
+  margin-bottom: 101px; }
+  .wrapper .wrapper-image {
+    color: #DAD8D7; }
+    .wrapper .wrapper-image .image-content {
+      display: flex;
+      gap: 14px;
+      align-items: start;
+      margin-left: 37px; }
+      .wrapper .wrapper-image .image-content .paragraph {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 14px;
+        width: 40%;
+        text-align: right; }
+  .wrapper .content {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding-top: 31px; }
+    .wrapper .content .heading p {
+      color: #FFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase; }
+    .wrapper .content .heading h1 {
+      color: #FFF;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 69.76px; }
+    .wrapper .content .desc {
+      display: flex;
+      flex-direction: column;
+      gap: 42px; }
+      .wrapper .content .desc p {
+        color: #DAD8D7;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+      .wrapper .content .desc button {
+        padding: 16px 28px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border: 1px solid #F4511F;
+        background-color: #F4511F;
+        width: fit-content;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: all 0.1s ease-in; }
+        .wrapper .content .desc button:hover {
+          background-color: transparent;
+          border: 1px solid #FFF; }
+
+.sliding {
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+  margin-inline: auto; }
+  .sliding .first {
+    width: 5px;
+    height: 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    transition: all 0.1s ease-in; }
+    .sliding .first:hover {
+      width: 24px; }
+
+.services {
+  width: 79%;
+  max-width: 972px;
+  margin-inline: auto;
+  margin-bottom: 110px; }
+  .services h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 121px;
+    margin-bottom: 65px; }
+  .services .service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px; }
+    .services .service .serv {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px; }
+      .services .service .serv .serve-para {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+      .services .service .serv p {
+        color: #DAD8D7;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+
+.about {
+  width: 79%;
+  max-width: 972px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 153px;
+  margin-bottom: 168px; }
+  .about .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; }
+    .about .about-content h2 {
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 59px;
+      margin-bottom: 13px; }
+    .about .about-content p {
+      color: #DAD8D7;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; }
+    .about .about-content button {
+      padding: 16px 28px;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border: 1px solid #F4511F;
+      background-color: #F4511F;
+      width: fit-content;
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      transition: all 0.1s ease-in; }
+      .about .about-content button:hover {
+        background-color: transparent;
+        border: 1px solid #FFF; }
+
+.menu-1 {
+  width: 79%;
+  max-width: 972px;
+  margin-inline: auto; }
+  .menu-1 h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; }
+  .menu-1 .premium-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    gap: 20px; }
+    .menu-1 .premium-menu .menu-2 {
+      display: flex;
+      margin-top: 94px;
+      gap: 29px; }
+      .menu-1 .premium-menu .menu-2 .menu-dec {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        justify-content: end;
+        align-items: center; }
+        .menu-1 .premium-menu .menu-2 .menu-dec .head {
+          color: #FFF;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+        .menu-1 .premium-menu .menu-2 .menu-dec p {
+          color: #DAD8D7;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+        .menu-1 .premium-menu .menu-2 .menu-dec .price {
+          color: #FFF;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+      .menu-1 .premium-menu .menu-2 .cart-button {
+        align-self: flex-end; }
+        .menu-1 .premium-menu .menu-2 .cart-button img {
+          background-color: #F4511F;
+          border-radius: 4px 4px 12px 4px;
+          padding: 4px 6px; }
+
+.discount {
+  width: 79%;
+  max-width: 972px;
+  margin-inline: auto;
+  display: flex;
+  gap: 116px;
+  justify-content: space-around;
+  margin-top: 236px; }
+  .discount .disc-dec {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center; }
+    .discount .disc-dec .disc-para p {
+      color: #FFF;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; }
+    .discount .disc-dec button {
+      padding: 16px 28px;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border: 1px solid #F4511F;
+      background-color: #F4511F;
+      width: fit-content;
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      transition: all 0.1s ease-in; }
+      .discount .disc-dec button:hover {
+        background-color: transparent;
+        border: 1px solid #FFF; }
+
+.new-arrival {
+  width: 79%;
+  max-width: 972px;
+  margin-inline: auto;
+  margin-top: 220px;
+  margin-bottom: 116px; }
+  .new-arrival h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; }
+  .new-arrival .arrive {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    color: white; }
+    .new-arrival .arrive .arrival {
+      display: flex;
+      gap: 35px; }
+      .new-arrival .arrive .arrival .arrive-menu {
+        display: flex;
+        justify-content: center; }
+        .new-arrival .arrive .arrival .arrive-menu .new p {
+          color: #FFF;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding: 4px 8px;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          background-color: #F4511F; }
+        .new-arrival .arrive .arrival .arrive-menu .arrival-menu {
+          display: flex;
+          flex-direction: column;
+          gap: 47px;
+          align-items: center; }
+          .new-arrival .arrive .arrival .arrive-menu .arrival-menu .arrive-menu-prc {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center; }
+            .new-arrival .arrive .arrival .arrive-menu .arrival-menu .arrive-menu-prc .arrival-menu-dec {
+              text-align: center;
+              width: fit-content; }
+              .new-arrival .arrive .arrival .arrive-menu .arrival-menu .arrive-menu-prc .arrival-menu-dec p {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal; }
+              .new-arrival .arrive .arrival .arrive-menu .arrival-menu .arrive-menu-prc .arrival-menu-dec p3 {
+                color: #DAD8D7;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal; }
+            .new-arrival .arrive .arrival .arrive-menu .arrival-menu .arrive-menu-prc .arrival-menu-price {
+              display: flex;
+              gap: 8px;
+              align-items: center; }
+              .new-arrival .arrive .arrival .arrive-menu .arrival-menu .arrive-menu-prc .arrival-menu-price p {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal; }
+              .new-arrival .arrive .arrival .arrive-menu .arrival-menu .arrive-menu-prc .arrival-menu-price p5 {
+                color: #F4511F;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal; }
+      .new-arrival .arrive .arrival .cart-button {
+        align-self: flex-end; }
+        .new-arrival .arrive .arrival .cart-button img {
+          background-color: #F4511F;
+          border-radius: 4px 4px 12px 4px;
+          padding: 4px 6px; }
+
+/*# sourceMappingURL=scss.css.map */
