@@ -70,21 +70,26 @@
             justify-content: center;
             align-items: center;
         }
+
+        p{
+            text-align: center;
+        }
     }
 
     .menu-1 {
 
         .premium-menu {
             grid-template-columns: repeat(2, 1fr);
+            width: 100%;
 
             .menu-2 {
                 display: flex;
                 margin-top: 94px;
                 gap: 29px;
 
-                .menu-dec {
+                /*.menu-dec {
                     flex-direction: row;
-                }
+                }*/
             }
         }
     }
@@ -118,11 +123,17 @@
         align-items: center;
     }
 
-    .serv {
+    .serv{
         flex-direction: column;
     }
 
-    .premium-menu {
-        grid-template-columns: 1fr;
+    .premium-menu{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .discount{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

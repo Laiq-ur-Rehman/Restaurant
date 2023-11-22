@@ -236,7 +236,8 @@ header {
     justify-items: center;
     width: fit-content;
     margin-inline: auto;
-    gap: 20px; }
+    gap: 20px;
+    width: 100%; }
     .menu-1 .premium-menu .menu-2 {
       display: flex;
       margin-top: 94px;
@@ -457,15 +458,19 @@ header {
     .about .about-content {
       justify-content: center;
       align-items: center; }
+    .about p {
+      text-align: center; }
 
   .menu-1 .premium-menu {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%; }
     .menu-1 .premium-menu .menu-2 {
       display: flex;
       margin-top: 94px;
-      gap: 29px; }
-      .menu-1 .premium-menu .menu-2 .menu-dec {
-        flex-direction: row; }
+      gap: 29px;
+      /*.menu-dec {
+          flex-direction: row;
+      }*/ }
 
   .new-arrival .arrive {
     flex-direction: column;
@@ -485,6 +490,11 @@ header {
     flex-direction: column; }
 
   .premium-menu {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: repeat(1, 1fr); }
+
+  .discount {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 /*# sourceMappingURL=scss.css.map */
