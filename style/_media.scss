@@ -43,14 +43,15 @@
             }
         }
     }
-    .services{
-    
-        .service{
+
+    .services {
+
+        .service {
             display: grid;
-            grid-template-rows:repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             grid-template-columns: 1fr;
-    
-            .serv{
+
+            .serv {
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
@@ -58,31 +59,70 @@
             }
         }
     }
-    .about{
+
+    .about {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,1fr);
-        gap:50px;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px;
         justify-items: center;
-    
-        .about-content{
+
+        .about-content {
             justify-content: center;
             align-items: center;
         }
     }
-    .menu-1{
-        
-        .premium-menu{
+
+    .menu-1 {
+
+        .premium-menu {
             grid-template-columns: repeat(2, 1fr);
-    
-            .menu-2{
+
+            .menu-2 {
                 display: flex;
                 margin-top: 94px;
                 gap: 29px;
-    
-                .menu-dec{
+
+                .menu-dec {
                     flex-direction: row;
                 }
             }
         }
+    }
+
+    .new-arrival {
+
+        .arrive {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+
+            .arrival {
+
+                .arrive-menu {
+
+                    .arrival-menu {
+                        flex-direction: row;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .serv {
+        flex-direction: column;
+    }
+
+    .premium-menu {
+        grid-template-columns: 1fr;
     }
 }
