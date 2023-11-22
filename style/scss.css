@@ -180,14 +180,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 153px;
-  margin-bottom: 168px;
-    /*.about-image{
-        width: 100%;
-
-        img{
-            object-fit: cover;
-        }
-    }*/ }
+  margin-bottom: 168px; }
   .about .about-content {
     display: flex;
     flex-direction: column;
@@ -226,6 +219,10 @@ header {
       .about .about-content button:hover {
         background-color: transparent;
         border: 1px solid #FFF; }
+  .about .about-image {
+    width: 100%; }
+    .about .about-image img {
+      object-fit: cover; }
 
 .menu-1 {
   width: 79%;
