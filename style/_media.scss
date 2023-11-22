@@ -48,7 +48,6 @@
 
         .service {
             display: grid;
-            grid-template-rows: repeat(3, 1fr);
             grid-template-columns: 1fr;
 
             .serv {
@@ -122,18 +121,77 @@
         justify-content: center;
         align-items: center;
     }
+    .menu-1 {
 
-    .serv{
-        flex-direction: column;
+        .premium-menu {
+            grid-template-columns: 1fr;
+
+            .menu-2 {
+
+                .menu-dec {
+                    flex-direction: row;
+                }
+            }
+        }
     }
-
-    .premium-menu{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
     .discount{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (max-width:480px){
+
+    .menu{
+        nav{
+            
+            a{
+                padding: 8px 12px;
+            }
+        }
+    }
+    .services {
+
+        .service {
+            margin-inline: auto;
+
+            .serv {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+            }
+        }
+    }
+    .menu-1 {
+
+        .premium-menu {
+
+            .menu-2 {
+
+                .menu-dec {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    .new-arrival {
+        margin-inline: auto;
+
+        .arrive {
+
+            .arrival {
+
+                .arrive-menu {
+
+                    .arrival-menu {
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
     }
 }

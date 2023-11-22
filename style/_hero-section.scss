@@ -56,6 +56,10 @@ header{
     .wrapper-image{
         color: $secondary-text-color;
 
+        img{
+            object-fit: cover;
+        }
+
         .image-content{
             display: flex;
             gap: 14px;
