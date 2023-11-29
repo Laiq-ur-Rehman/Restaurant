@@ -2,7 +2,7 @@
     width: 79%;
     max-width: 972px;
     margin-inline: auto;
-}
+
 
 header{
     padding-top: 29px;
@@ -52,11 +52,14 @@ header{
     display: flex;
     gap: 78px;
     margin-bottom: 101px;
+    width: 100%;
 
     .wrapper-image{
         color: $secondary-text-color;
+        width: 100%;
 
         img{
+            width: 100%;
             object-fit: cover;
         }
 
@@ -154,4 +157,5 @@ header{
             width: 24px;
         }
     }
+}
 }
