@@ -122,6 +122,14 @@
         justify-content: center;
         align-items: center;
     }
+    .menu{
+        nav{
+            
+            a{
+                padding: 8px 12px;
+            }
+        }
+    }
     .menu-1 {
 
         .premium-menu {
@@ -148,7 +156,7 @@
         nav{
             
             a{
-                padding: 8px 12px;
+                padding: 8px 6px;
             }
         }
     }
@@ -194,16 +202,5 @@
                 }
             }
         }
-    }
-@media (max-width:380px){
-
-        .menu{
-            nav{
-                
-                a{
-                    padding: 8px 6px;
-                }
-            }
-        }
-    }   
+    }  
 }
