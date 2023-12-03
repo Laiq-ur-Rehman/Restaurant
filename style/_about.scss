@@ -52,4 +52,12 @@
                 }
         }
     }
+    .about-image{
+        width: fit-content;
+        img{
+            width: 100%;
+            object-fit: cover;
+            margin-inline: auto;
+        }
+    }
 }

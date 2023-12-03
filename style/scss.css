@@ -216,6 +216,12 @@
       .about .about-content button:hover {
         background-color: transparent;
         border: 1px solid #FFF; }
+  .about .about-image {
+    width: fit-content; }
+    .about .about-image img {
+      width: 100%;
+      object-fit: cover;
+      margin-inline: auto; }
 
 .menu-1 {
   width: 79%;
@@ -486,7 +492,7 @@
     align-items: center; }
 
   .hero-section .menu nav a {
-    padding: 8px 12px; }
+    padding: 8px 18px; }
 
   .menu-1 .premium-menu {
     grid-template-columns: 1fr; }
@@ -499,7 +505,7 @@
     align-items: center; } }
 @media (max-width: 480px) {
   .hero-section .menu nav a {
-    padding: 8px 6px; }
+    padding: 8px 10px; }
 
   .services .service {
     margin-inline: auto; }
@@ -517,5 +523,8 @@
     .new-arrival .arrive .arrival .arrive-menu .arrival-menu {
       flex-direction: column;
       gap: 20px; } }
+@media (max-width: 480px) and (max-width: 320px) {
+  .hero-section .menu nav a {
+    padding: 8px 6px; } }
 
 /*# sourceMappingURL=scss.css.map */
