@@ -41,6 +41,75 @@
     transition: all 0.1s ease-in; }
     .hero-section .menu nav a:hover {
       background-color: #F4511F; }
+  .hero-section .menu-12 {
+    display: none;
+    width: 24px;
+    z-index: 10; }
+    .hero-section .menu-12 .spinner {
+      transition: all 0.3s; }
+    .hero-section .menu-12 .top {
+      margin-top: 2px; }
+    .hero-section .menu-12 .middle {
+      margin: 5px 0px; }
+    .hero-section .menu-12 #openSidebarMenu {
+      display: none; }
+    .hero-section .menu-12 .top,
+    .hero-section .menu-12 .bottom {
+      width: 100%;
+      border: 1px solid #FFF; }
+    .hero-section .menu-12 .middle {
+      width: 70%;
+      border: 1px solid #FFF; }
+    .hero-section .menu-12 .dropdown {
+      background-color: #000000;
+      border-radius: 10px;
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      display: none;
+      flex-direction: column;
+      gap: 30px;
+      transition: all 0.3s ease-in; }
+    .hero-section .menu-12 .menu-list-dropdown {
+      width: 90%;
+      margin-inline: auto; }
+    .hero-section .menu-12 .menu-list-dropdown > ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      padding: 0rem;
+      flex-grow: 1; }
+    .hero-section .menu-12 .menu-list-dropdown li {
+      border-bottom: 1px solid #FFF;
+      display: block; }
+    .hero-section .menu-12 .menu-list-dropdown a {
+      width: 50%;
+      margin-inline: auto;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #FFF;
+      display: block;
+      padding: 20px;
+      transition: all 0.1s ease-in-out; }
+      .hero-section .menu-12 .menu-list-dropdown a:hover {
+        background-color: #F4511F; }
+    .hero-section .menu-12 .sidebarIconToggle:hover {
+      cursor: pointer; }
+    .hero-section .menu-12 #openSidebarMenu:checked ~ .sidebarIconToggle > .top {
+      rotate: 135deg;
+      margin-top: 8px; }
+    .hero-section .menu-12 #openSidebarMenu:checked ~ .sidebarIconToggle > .bottom {
+      rotate: -135deg;
+      margin-top: -14px;
+      margin-bottom: 8px; }
+    .hero-section .menu-12 #openSidebarMenu:checked ~ .sidebarIconToggle > .middle {
+      opacity: 0%; }
+    .hero-section .menu-12 #openSidebarMenu:checked ~ .dropdown {
+      display: block;
+      width: 100%; }
   .hero-section .wrapper {
     display: flex;
     gap: 78px;
@@ -504,8 +573,14 @@
     justify-content: center;
     align-items: center; } }
 @media (max-width: 480px) {
-  .hero-section .menu nav a {
-    padding: 8px 10px; }
+  .hero-section header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .hero-section .menu {
+    display: none; }
+  .hero-section .menu-12 {
+    display: block; }
 
   .services .service {
     margin-inline: auto; }
@@ -523,8 +598,5 @@
     .new-arrival .arrive .arrival .arrive-menu .arrival-menu {
       flex-direction: column;
       gap: 20px; } }
-@media (max-width: 480px) and (max-width: 320px) {
-  .hero-section .menu nav a {
-    padding: 8px 6px; } }
 
 /*# sourceMappingURL=scss.css.map */

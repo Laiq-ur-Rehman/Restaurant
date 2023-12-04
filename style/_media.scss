@@ -157,12 +157,18 @@
 @media (max-width:480px) {
 
     .hero-section {
+        header {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .menu {
-            nav {
-                a {
-                    padding: 8px 10px;
-                }
-            }
+            display: none;
+        }
+
+        .menu-12 {
+            display: block;
         }
     }
 
@@ -205,19 +211,6 @@
                     .arrival-menu {
                         flex-direction: column;
                         gap: 20px;
-                    }
-                }
-            }
-        }
-    }
-
-    @media (max-width:320px) {
-
-        .hero-section {
-            .menu { 
-                nav {
-                    a {
-                        padding: 8px 6px;
                     }
                 }
             }
